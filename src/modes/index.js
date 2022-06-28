@@ -17,6 +17,7 @@ export function enable(modes) {
       [Constants.modes.DRAW_POINT]: patchDrawPoint(modes[Constants.modes.DRAW_POINT]),
       [Constants.modes.SIMPLE_SELECT]: patchSimpleSelect(modes[Constants.modes.SIMPLE_SELECT]),
       [Constants.modes.DIRECT_SELECT]: patchDirectSelect(modes[Constants.modes.DIRECT_SELECT]),
+      ["draw_bezier_curve"]: patchDrawLineString(modes[Constants.modes.DRAW_LINE_STRING]),
       [Constants.modes.STATIC]: Static,
     };
   }
